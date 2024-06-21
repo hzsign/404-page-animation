@@ -12,9 +12,11 @@ body {
 
 .container {
   position: absolute;
-  left: auto;
-  top: auto;
+  display: flex;
+  flex-wrap: nowrap;
   width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 .circle {
@@ -411,5 +413,20 @@ body {
   86%,
   100% {
     opacity: 0;
+  }
+}
+
+@media screen and (max-width: 962px) {
+  body {
+    height: max-content;
+  }
+  .container {
+    position: absolute;
+    display: flex;
+    flex-wrap: nowrap;
+    left: 10%;
+    top: 10%;
+    align-items: center;
+    justify-content: center;
   }
 }
